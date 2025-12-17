@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import HelloAntd from './components/HelloAntd.vue';
 import Versions from './components/Versions.vue'
 
 const ipcHandle = (): void => window.electron.ipcRenderer.send('ping')
@@ -23,4 +24,7 @@ const ipcHandle = (): void => window.electron.ipcRenderer.send('ping')
     </div>
   </div>
   <Versions />
+  <div>
+    <HelloAntd />
+  </div>
 </template>
